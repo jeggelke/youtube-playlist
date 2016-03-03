@@ -12,7 +12,7 @@ var playlistSidebar = document.createElement('div');
 $(playlistSidebar).addClass('playlist-sidebar');
 var playlistHeading = document.createElement('div');
 $(playlistHeading).addClass('playlist-heading');
-$(playlistHeading).html('View More Sessions');
+$(playlistHeading).html('View More Videos');
 $(playlistSidebar).append(playlistHeading);
 $(playlistSidebar).append('<ul></ul>');
 $(videoContainer).append(videoIframe);
