@@ -85,3 +85,9 @@ $(window).resize(function(){
   $('.playlist-heading').outerWidth($('.playlist-sidebar').outerWidth() - 2);
 });
 }
+
+// for use as standalone loader
+function init(playlistId, apiKey){
+   //make sure you change the api key as it will not work on other sites
+     getPlaylistData(playlistId, apiKey, loadPlayer);
+   }

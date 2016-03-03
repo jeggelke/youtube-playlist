@@ -3,7 +3,6 @@ var videoInfo = [];
 function getPlaylistData(playlistId, apiKey, _callback){
   videoInfo = [];
   var queryUrl = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=' + playlistId + '&key=' + apiKey;
-  console.log(queryUrl);
   $.ajax({
     url: queryUrl,
     dataType: 'json'
