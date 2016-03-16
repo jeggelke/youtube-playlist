@@ -76,10 +76,6 @@ $(videoIframe).attr('height', calculatedIframeHeight);
   $('.playlist-sidebar ul').css('margin-top', $('.playlist-heading').outerHeight());
   $('.playlist-heading').outerWidth($('.playlist-sidebar').outerWidth() - 2);
   $('.playlist-sidebar').outerHeight($('.video-container').outerHeight());
-  $('.session-container').each(function(){
-    var imageHeight = $(this).children('img').height();
-    $(this).css('min-height', imageHeight);
-  });
 
 $(window).resize(function(){
   $('.playlist-heading').outerWidth($('.playlist-sidebar').outerWidth() - 2);
