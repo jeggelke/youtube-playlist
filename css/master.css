@@ -29,6 +29,7 @@
     padding: 10px;
     font-weight: bold;
     color: #004b8d;
+    min-height: 51px;
   }
 
   .session-container:hover {

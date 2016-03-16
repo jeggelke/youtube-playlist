@@ -1,8 +1,9 @@
 var PLAYLIST_ID, API_KEY, playlistTitle, channelTitle;
 var videoInfo = [];
 function getPlaylistData(playlistId, apiKey, _callback){
+  PLAYLIST_ID = playlistId;
   videoInfo = [];
-  var queryUrl = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=' + playlistId + '&key=' + apiKey;
+  var queryUrl = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=' + PLAYLIST_ID + '&key=' + apiKey;
   $.ajax({
     url: queryUrl,
     dataType: 'json'
